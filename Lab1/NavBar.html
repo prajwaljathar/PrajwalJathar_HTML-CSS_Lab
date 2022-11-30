@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        h1 {
+            background-color: firebrick;
+            margin: 0%;
+            padding: 20px;
+            text-align: right;
+        }
+
+        .navigation {
+            margin: 0%;
+            background-color: gray;
+        }
+
+            .navigation li {
+                display: inline-block;
+                padding-left: 2%;
+                font-size: 20px;
+            }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .select {
+            position: absolute;
+            width: auto;
+            display: none;
+            background-color: rgb(167, 160, 160);
+            padding: 10px;
+        }
+
+            .select li {
+                display: block;
+            }
+
+                .select li a {
+                    color: rgb(75, 75, 202);
+                }
+
+        .navigation li:nth-child(2):hover #select1, .navigation li:nth-child(3):hover #select2 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center">Demo of Dropdown</h1>
+    <ul class="navigation">
+        <li><a href="#">link1</a></li>
+        <li>
+            <a href="#">link2</a>
+            <ul id="select1" class="select">
+                <li><a href="#">DD_Link_1</a></li>
+                <li><a href="#">DD_Link_2</a></li>
+                <li><a href="#">DD_Link_3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">link3</a>
+            <ul id="select2" class="select">
+                <li><a href="#">DD_Link_1</a></li>
+                <li><a href="#">DD_Link_2</a></li>
+                <li><a href="#">DD_Link_3</a></li>
+                <li><a href="#">DD_Link_4</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
